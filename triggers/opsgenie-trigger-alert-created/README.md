@@ -22,6 +22,10 @@ parameters:
     default: ""
   team:
     default: ""
+  description:
+    default: ""
+  priority:
+    default: ""  
     
 triggers:
 - name: alert-created
@@ -33,6 +37,8 @@ triggers:
       id: !Data id
       message: !Data message
       team: !Data team
+      description: !Data description
+      priority: !Data priority
 ```
 
 ## Example Raw Data 
