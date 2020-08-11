@@ -3,13 +3,12 @@ kind: Integration
 name: opsgenie
 channel: alpha
 version: v20200522
-summary: Relay integration for Opsgenie
+summary: Opsgenie
 license: Apache-2.0
 homepage: https://github.com/relay-integrations/relay-opsgenie
 
 description: |
-  This integration provides access to Opsgenie, a real-time operations and
-  incident response platform from Atlassian.
+  Opsgenie is a modern incident management platform for operating always-on services, empowering Dev and Ops teams to plan for service disruptions and stay in control during incidents.
 
 owner:
   name: Puppet, Inc.
@@ -17,5 +16,6 @@ owner:
   url: https://puppet.com
 
 tags:
-- rto
-- incident response
+  - alerting
+  - incident response
+  - rto
