@@ -12,35 +12,6 @@ This [OpsGenie](https://www.atlassian.com/software/opsgenie) trigger fires when 
 | `team` | string |  team responding to alert |
 | `priority` | string |  alert priority |
 
-## Example Trigger
-
-```
-parameters:
-  id: 
-    default: ""
-  message:
-    default: ""
-  team:
-    default: ""
-  description:
-    default: ""
-  priority:
-    default: ""  
-    
-triggers:
-- name: alert-created
-  source:
-    type: webhook
-    image: relaysh/opsgenie-trigger-alert-created
-  binding:
-    parameters:
-      id: !Data id
-      message: !Data message
-      team: !Data team
-      description: !Data description
-      priority: !Data priority
-```
-
 ## Example Raw Data 
 
 ```

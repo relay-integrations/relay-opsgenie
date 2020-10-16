@@ -19,3 +19,20 @@ build:
 
 publish:
   repository: relaysh/opsgenie-trigger-alert-created
+
+examples:
+- summary: When a new alert is created
+  content:
+    apiVersion: 1
+    kind: Trigger
+    name: alert-created
+    source:
+      type: webhook
+      image: relaysh/opsgenie-trigger-alert-created
+    binding:
+      parameters:
+        id: !Data id
+        message: !Data message
+        team: !Data team
+        description: !Data description
+        priority: !Data priority
