@@ -23,7 +23,7 @@ publish:
 examples:
 - summary: When a new alert is created
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Trigger
     name: alert-created
     source:
