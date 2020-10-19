@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "ID of the alert"
+      },
+      "message": {
+        "type": "string",
+        "description": "Alert message"
+      },
+      "description": {
+        "type": "string",
+        "description": "Alert description"
+      },
+      "team": {
+        "type": "string",
+        "description": "Team responding to alert"
+      },
+      "priority": {
+        "type": "string",
+        "description": "Alert priority"
+      }
+    },
+    "required": [
+      "id",
+      "message",
+      "description",
+      "team",
+      "priority"
+    ],
+    "additionalProperties": false
+  } 
