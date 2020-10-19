@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Trigger
 name: opsgenie-trigger-alert-created
 version: 1
-summary: Opsgenie Alert created
+summary: Opsgenie alert created
 description: |
   This trigger fires when an OpsGenie alert is created for the first time.
 
